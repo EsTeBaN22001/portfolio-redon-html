@@ -1,0 +1,1 @@
+if(document.querySelector(".form")){async function handleSubmit(e){e.preventDefault();const t=new FormData(this);(await fetch(this.action,{method:this.method,body:t,headers:{Accept:"application/json"}})).ok&&(this.reset(),Swal.fire("Gracias por contactarme!","En breve te responderé!","success"))}document.querySelector(".form").addEventListener("submit",handleSubmit)}

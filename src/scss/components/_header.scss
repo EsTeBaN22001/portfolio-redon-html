@@ -1,0 +1,53 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  z-index: 1;
+  transition: all .7s ease;
+
+  .logo-container{
+    .logo{
+      width: 25rem;
+      height: 10rem;
+
+      rect{
+        transition: stroke .2s ease;
+      }
+
+      @include m.phone{
+        width: 20rem;
+        height: 10rem;
+      }
+      .logoPath{
+        fill: v.$white;
+      }
+    }
+  }
+  .menu-icon{
+    font-size: 4rem;
+    display: none;
+    z-index: 20;
+    @include m.tablet{
+      display: inline-block;
+    }
+  }
+}
+
+.down{
+  background-color: v.$principalColor;
+  padding: 0rem 2rem;
+
+  .logo{
+    rect{
+      stroke: v.$white;
+    }
+  }
+}

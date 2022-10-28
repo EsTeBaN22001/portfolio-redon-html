@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-justify: distribute;
+  margin-top: 0;
+  padding-top: 15rem;
+
+  @include m.tablet{
+    text-align: center;
+  }
+
+  .about-text-container{
+    flex: 4;
+
+    p{
+      margin-top: 2rem;
+    }
+
+    .typed{
+      color: v.$blue;
+    }
+  }
+
+  .about-img-container{
+    max-width: 30rem;
+
+    @include m.tablet{
+      display: none;
+    }
+    
+    img{
+      width: 100%;
+      height: auto;
+
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.frontend-development-container,
+.backend-development-container,
+.collaborative-tools{
+  margin-top: 5rem;
+  text-align: justify;
+
+  h2{
+    margin-bottom: 3rem;
+  }
+
+}
+
+.card-about{
+  padding: 2rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  background-color: rgba($color: #ffffff, $alpha: .1);
+  backdrop-filter: blur(.2rem);
+  border-radius: 1rem;
+  float: right;
+
+  @include m.phone{
+    float: unset;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .card-title{
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+
+  .card-content{
+    .skills{
+      li{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .skill-icon{
+          color: v.$principalColor;
+          flex-basis: 8rem;
+          width: 5rem;
+          height: 5rem;
+
+          &.fa-html5{
+            color: #D94A1E;
+          }
+
+          &.fa-css3-alt{
+            color: #0B6DAF;
+          }
+
+          &.fa-sass{
+            color: #C36291;
+          }
+
+          &.fa-js-square{
+            color: #D99A26;
+          }
+
+          &.fa-gulp{
+            color: #DC484C;
+          }
+
+          &.fa-php{
+            color: #404D85;
+          }
+
+          &.fa-database{
+            color: #DC931F;
+          }
+
+          &.fa-code-branch{
+            color: #E74B27;
+          }
+
+          &.fa-clipboard-list{
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

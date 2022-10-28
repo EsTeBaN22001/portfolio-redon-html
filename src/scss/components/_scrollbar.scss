@@ -1,0 +1,10 @@
+@use 'base/variables' as v;
+
+body::-webkit-scrollbar{
+  width: 1rem;
+  background: v.$darkGray;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: v.$principalColor;
+}

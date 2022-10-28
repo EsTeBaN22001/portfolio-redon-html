@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contact-page{
+  padding: 15rem 0;
+
+  .form-container{
+    .form{
+      margin: 0 auto;
+      background-color: rgba($color: #ffffff, $alpha: .06);
+      backdrop-filter: blur(.4rem);
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 50rem;
+
+      @include m.tablet{
+        width: auto;
+      }
+
+      .field-group{
+        position: relative;
+        margin-top: 2rem;
+
+        .input{
+          display: block;
+          outline: none;
+          color: v.$white;
+          width: 100%;
+          padding: 1rem;
+          font-size: 1.7rem;
+          background-color: rgba($color: #ffffff, $alpha: .2);
+          backdrop-filter: blur(.2rem);
+          border: .3rem solid transparent;
+          transition: .2s ease-in-out all;
+
+          &:focus{
+            border: .3rem solid v.$blue;
+          }
+        }
+
+        label{
+          font-size: 2rem;
+          padding: 1rem 0;
+        }
+
+        textarea{
+          resize: none;
+          height: 20rem;
+        }
+      }
+
+      button{
+        @include m.button(v.$principalColor, v.$white){
+          width: 100%;
+          @include m.tablet{
+            width: 100%;
+          }
+        };
+      }
+    }
+  }
+}
