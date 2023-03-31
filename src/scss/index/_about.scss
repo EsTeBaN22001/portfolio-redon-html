@@ -8,9 +8,16 @@
   text-justify: distribute;
   margin-top: 0;
   padding-top: 15rem;
+  height: 100vh;
 
   @include m.tablet{
     text-align: center;
+  }
+
+  h1{
+    text-align: start;
+
+    @include m.tablet{text-align: center;}
   }
 
   .about-text-container{

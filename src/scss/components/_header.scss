@@ -11,7 +11,7 @@
   align-items: center;
   padding: 2rem;
   z-index: 1;
-  transition: all .7s ease;
+  transition: all .3s ease;
 
   .logo-container{
     .logo{
@@ -19,6 +19,8 @@
       height: 10rem;
 
       rect{
+        // stroke: v.$secondaryColor;
+        stroke: v.$white;
         transition: stroke .2s ease;
       }
 
@@ -42,12 +44,9 @@
 }
 
 .down{
-  background-color: v.$principalColor;
+  background-color: lighten(v.$bgColor, 4);
   padding: 0rem 2rem;
-
-  .logo{
-    rect{
-      stroke: v.$white;
-    }
-  }
+  -webkit-box-shadow: 0px 0px 38px -24px rgba(115,115,115,1);
+  -moz-box-shadow: 0px 0px 38px -24px rgba(115,115,115,1);
+  box-shadow: 0px 0px 38px -24px rgba(115,115,115,1);
 }

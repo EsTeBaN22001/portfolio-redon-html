@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Esteban Redón</title>
   <link rel="icon" href="/build/img/logoSmall.webp">
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- SCROLL REVEAL -->
   <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- STYLES CSS -->
   <link rel="stylesheet" href="/build/css/app.css">
 </head>
 
@@ -29,7 +29,7 @@
   <div id="bg"></div>
 
   <header class="header">
-    <div class="logo-container reveal-right">
+    <div class="logo-container reveal1">
       <a href="/index.html">
         <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148.92000000000002 44.184"
           width="148.92000000000002" height="44.184">
@@ -41,128 +41,215 @@
         </svg>
       </a>
     </div>
-    <div class="menu-icon">
-      <i class="fa-solid fa-bars"></i>
+    <div class="social-links">
+      <div class="links-container">
+        <p class="phone-number"><i class="fa-solid fa-phone"></i> +54 2664552752 | </p>
+        <a href="#" class="social-icon shadow round" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="social-icon shadow round" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="/about-us.html">Acerca de</a></li>
-        <li><a href="/proyects.html">Proyectos</a></li>
-        <li><a href="/contact.html">Contáctame</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <section class="container-sm section about reveal-left">
+  <section id="about-us" class="container-sm about reveal2 section">
     <div class="about-text-container">
       <h1 class="title">&lt;Desarrollador <br> <span class="typed"></span>/&gt;</h1>
-      <p>¡Hola! Me Esteban y soy un Desarrollador Fullstack con conocimientos en desarrollo de
-        aplicaciones web tanto front-end como back-end. he creado y vendido páginas web como freelancer. Hace casi 3 años que estoy formandome en este campo y creo que tengo los conocimientos necesarios para crear sitios de calidad</p>
+      <p>¡Hola! Soy Desarrollador web Fullstack. He creado y vendido páginas web como freelancer. Hace 3 años que estoy formandome en este campo y cuento con los conocimientos necesarios para crear sitios de calidad que respondan a las necesidades del cliente</p>
     </div>
-    <div class="about-img-container reveal-left">
+    <div class="about-img-container reveal1">
       <img src="build/img/about.svg" alt="Imágen acerca de mí">
     </div>
   </section>
 
-  <section class="container-sm section cards reveal-right">
-    <h2 class="title-cards-container">&lt;Habilidades principales/&gt;</h2>
-    <p class="paragraph-cards-container">Tecnologías en las que desarrollo las aplicaciones web actualmente. Pero puedo
-      adaptarme fácilmente a otras tecnologias o lo que requiera el proyecto.</p>
+  <section id="skills" class="container-sm cards reveal1 section">
+    <h2 class="title">&lt;Habilidades principales/&gt;</h2>
     <div class="cards-container">
-      <div class="card reveal-vertical1">
-        <div class="card-icon">
-          <i class="fa-solid fa-pen-ruler"></i>
-        </div>
-        <h2 class="card-title">Front-end</h2>
-        <div class="card-text">
-          <p>Las principales tecnologías que utilizo para el front-end son: HTML, CSS3 y Javascript. Tengo un nivel
-            aceptable y básico para realizar las tareas que se requieran. Además sé utilizar SASS y como compilador y
-            task-runner uso GULP.js.</p>
-        </div>
+
+      <div class="card reveal1">
+        <h2 class="card-title">&lt;Front-end/&gt;</h2>
+        <ul class="skills-list">
+
+          <li class="skill">
+            <div class="skill-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <p class="skill-text">Habilidades técnicas y creativas</p>
+          </li>
+
+          <li class="skill">
+            <div class="skill-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <p class="skill-text">Diseño de interfaces de usuarios</p>
+          </li>
+
+          <li class="skill">
+            <div class="skill-icon">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <p class="skill-text">Optimización de rendimiento</p>
+          </li>
+
+        </ul>
+        <hr class="separator">
+        <ul class="technologies">
+          <li><i class="fa-brands fa-html5 skill-icon"></i></li>
+          <li><i class="fa-brands fa-css3-alt skill-icon"></i></li>
+          <li><i class="fa-brands fa-js-square skill-icon"></i></li>
+          <li><i class="fa-brands fa-sass skill-icon"></i></li>
+          <li><i class="fa-brands fa-gulp skill-icon"></i></li>
+        </ul>
       </div>
-      <div class="card reveal-vertical2">
-        <div class="card-icon">
-          <i class="fa-solid fa-database"></i>
-        </div>
-        <h2 class="card-title">Back-end</h2>
-        <div class="card-text">
-          <p>En la parte de back-end las tecnologías principales que manejo son: como lenguaje de programación PHP y
-            como bases de datos MySql. Se hacer lo básico de estas tecnologías. Incluso en el lenguaje php se utilizar
-            el patrón de diseño MVC.</p>
-        </div>
+
+      <div class="card reveal2">
+        <h2 class="card-title">&lt;Back-end/&gt;</h2>
+        <ul class="skills-list">
+
+          <li class="skill">
+            <div class="skill-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <p class="skill-text">Administración de bases de datos</p>
+          </li>
+
+          <li class="skill">
+            <div class="skill-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <p class="skill-text">Api's y servicios</p>
+          </li>
+
+          <li class="skill">
+            <div class="skill-icon">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <p class="skill-text">Seguridad y rendimiento</p>
+          </li>
+
+        </ul>
+        <hr class="separator">
+        <ul class="technologies">
+          <li><i class="fa-brands fa-php skill-icon"></i></li>
+          <li><i class="fa-solid fa-database skill-icon"></i></li>
+        </ul>
       </div>
-      <div class="card reveal-vertical3">
-        <div class="card-icon">
-          <i class="fa-solid fa-users"></i>
-        </div>
-        <h2 class="card-title">Trabajo en equipo</h2>
-        <div class="card-text">
-          <p>Las tecnologías y aplicaciones que se utilizar para trabajar en equipo son GIT y para organizar las tareas
-            o planificaciones sé utilizar lo básico de Notion.</p>
-        </div>
+
+      <div class="card reveal3">
+        <h2 class="card-title">&lt;Habilidades/&gt;</h2>
+        <ul class="skills-list">
+
+          <li class="skill">
+            <div class="skill-icon">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <p class="skill-text">Comunicación y trabajo en equipo</p>
+          </li>
+
+          <li class="skill">
+            <div class="skill-icon">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <p class="skill-text">Responsabilidad y compromiso</p>
+          </li>
+
+          <li class="skill">
+            <div class="skill-icon">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <p class="skill-text">Resolución de problemas</p>
+          </li>
+
+        </ul>
+        <hr class="separator">
+        <ul class="technologies">
+          <li><i class="fa-solid fa-code-branch skill-icon"></i></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 100 100" fill="none">
+            <path d="M6.017 4.313l55.333 -4.087c6.797 -0.583 8.543 -0.19 12.817 2.917l17.663 12.443c2.913 2.14 3.883 2.723 3.883 5.053v68.243c0 4.277 -1.553 6.807 -6.99 7.193L24.467 99.967c-4.08 0.193 -6.023 -0.39 -8.16 -3.113L3.3 79.94c-2.333 -3.113 -3.3 -5.443 -3.3 -8.167V11.113c0 -3.497 1.553 -6.413 6.017 -6.8z" fill="#fff"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M61.35 0.227l-55.333 4.087C1.553 4.7 0 7.617 0 11.113v60.66c0 2.723 0.967 5.053 3.3 8.167l13.007 16.913c2.137 2.723 4.08 3.307 8.16 3.113l64.257 -3.89c5.433 -0.387 6.99 -2.917 6.99 -7.193V20.64c0 -2.21 -0.873 -2.847 -3.443 -4.733L74.167 3.143c-4.273 -3.107 -6.02 -3.5 -12.817 -2.917zM25.92 19.523c-5.247 0.353 -6.437 0.433 -9.417 -1.99L8.927 11.507c-0.77 -0.78 -0.383 -1.753 1.557 -1.947l53.193 -3.887c4.467 -0.39 6.793 1.167 8.54 2.527l9.123 6.61c0.39 0.197 1.36 1.36 0.193 1.36l-54.933 3.307 -0.68 0.047zM19.803 88.3V30.367c0 -2.53 0.777 -3.697 3.103 -3.893L86 22.78c2.14 -0.193 3.107 1.167 3.107 3.693v57.547c0 2.53 -0.39 4.67 -3.883 4.863l-60.377 3.5c-3.493 0.193 -5.043 -0.97 -5.043 -4.083zm59.6 -54.827c0.387 1.75 0 3.5 -1.75 3.7l-2.91 0.577v42.773c-2.527 1.36 -4.853 2.137 -6.797 2.137 -3.107 0 -3.883 -0.973 -6.21 -3.887l-19.03 -29.94v28.967l6.02 1.363s0 3.5 -4.857 3.5l-13.39 0.777c-0.39 -0.78 0 -2.723 1.357 -3.11l3.497 -0.97v-38.3L30.48 40.667c-0.39 -1.75 0.58 -4.277 3.3 -4.473l14.367 -0.967 19.8 30.327v-26.83l-5.047 -0.58c-0.39 -2.143 1.163 -3.7 3.103 -3.89l13.4 -0.78z" fill="#000"/>
+            </svg>
+          </li>
+        </ul>
       </div>
+
     </div>
   </section>
 
-  <section class="container-sm section proyects reveal-left">
-    <h2>&lt;Proyectos realizados más populares/&gt;</h2>
+  <section id="proyects" class="container-sm proyects reveal1 section">
+    <h2 class="title">&lt;Proyectos realizados/&gt;</h2>
     <div class="proyects-container">
-      <div class="proyect reveal-horizontal1" id="nissi">
+      <div class="proyect reveal1" id="equizzy">
+        <div class="img-container">
+          <img src="build/img/equizzy-index.webp" alt="equizzy-index">
+        </div>
+        <div class="text-container">
+          <h3>EquizzyApp</h3>
+          <p>Sitio web de encuestas donde puedes crear tus propias encuestas y contestar encuestas creadas por usuarios</p>
+          <a class="visit-site-button" target="_blank" href="https://appsalon-er.000webhostapp.com/">Visitar sitio</a>
+        </div>
+      </div>
+      <div class="proyect reveal2" id="nissi">
         <div class="img-container">
           <img src="build/img/nissi-index.webp" alt="nissi-confecciones-index">
         </div>
         <div class="text-container">
-          <div class="buttons-container">
-            <h3>Nissi-confecciones</h3>
+          <h3>Nissi-confecciones</h3>
+          <p>Sitio web de un cliente mostrando su empresa incluyendo catálogo de productos y galería de fotos</p>
             <a class="visit-site-button" target="_blank" href="https://nissi-confecciones.000webhostapp.com/">Visitar
               sitio</a>
-          </div>
-          <p>Este sitio web fué vendido a un cliente el cual quería potenciar su emprendimiento y tener presencia en
-            internet. Este sitio cuenta con galería de productos e imágenes y es totalmente autoadministrable por el
-            cliente. Es decir que tiene toda una interfaz para ser controlada por el dueño del sitio.</p>
         </div>
       </div>
-      <div class="proyect reveal-horizontal2" id="uptask">
+      <div class="proyect reveal3" id="uptask">
         <div class="img-container">
           <img src="build/img/uptask-tasks.webp" alt="uptask-task">
         </div>
         <div class="text-container">
-          <div class="buttons-container">
-            <h3>UpTask</h3>
+          <h3>UpTask</h3>
+          <p>Sitio web administrador de tareas. Permite crear tareas y marcarlas como completas o incompletas</p>
             <a class="visit-site-button" target="_blank" href="https://uptaskapper.000webhostapp.com/">Visitar sitio</a>
-          </div>
-          <p>Este proyecto se basa en un gestor de proyectos y tareas pendientes. Con esta página puedes crear proyectos
-            a realizar y gestionar las tareas que tienes que realizar en ese proyecto.</p>
         </div>
       </div>
-      <div class="proyect reveal-horizontal3" id="appsalon">
+      <div class="proyect reveal4" id="appsalon">
         <div class="img-container">
           <img src="build/img/appsalon-index.webp" alt="appsalon-index">
         </div>
         <div class="text-container">
-          <div class="buttons-container">
-            <h3>AppSalon</h3>
-            <a class="visit-site-button" target="_blank" href="https://appsalon-er.000webhostapp.com/">Visitar sitio</a>
-          </div>
-          <p>Este proyecto se basa en reservar una cita para un salón de belleza en el que podés reservar que tipo de
-            servicio necesitas y reservar la cita con tus datos. Además cuenta con un panel de administración para el
-            dueño/a del salón de belleza o peluquería.</p>
+          <h3>AppSalon</h3>
+          <p>Sitio web para reservar turnos en salón de estética y seleccionar los diferentes servicios requeridos</p>
+          <a class="visit-site-button" target="_blank" href="https://appsalon-er.000webhostapp.com/">Visitar sitio</a>
         </div>
       </div>
     </div>
-    <a href="/proyects.html" class="button-all-proyects">Ver todos los proyectos</a>
+
   </section>
 
-  <section class="container-sm contact-us reveal-right">
-    <div class="contact-us-container">
-      <h3>Contáctame dando click a este enlace</h3>
-      <a href="/contact.html" class="contact-button">Contáctame</a>
+  <section id="contact" class="container-sm contact-us reveal1 section">
+    <h2 class="title">&lt;Contáctame/&gt;</h2>
+    <div class="form-container">
+      <form class="form reveal-top" action="https://formspree.io/f/xgedyjzz" method="POST" id="form">
+        <div class="field-group">
+          <label for="name">Nombre</label>
+          <input class="input" type="text" name="name" id="name">
+        </div>
+        <div class="field-group">
+          <label for="surname">Apellido</label>
+          <input class="input" type="text" name="surname" id="surname">
+        </div>
+        <div class="field-group">
+          <label for="email">Correo electrónico</label>
+          <input class="input" type="email" name="email" id="email">
+        </div>
+        <div class="field-group">
+          <label for="message">Mensaje</label>
+          <textarea class="input" name="message" id="message"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container footer-container">
-      <div class="contact reveal-vertical1">
+      <div class="contact reveal1">
         <h3 class="titleSeparator">&lt;Enlaces de contacto/&gt;</h3>
         <div class="contact-group">
           <a href="#">
@@ -183,7 +270,7 @@
           </a>
         </div>
       </div>
-      <div class="other-pages reveal-vertical2">
+      <div class="other-pages reveal2">
         <h3>&lt;Otras páginas/&gt;</h3>
         <ul class="navFooter">
           <li><a href="/index.html">Inicio</a><span>Ir al inicio</span></li>
@@ -203,6 +290,7 @@
   <script src="/build/js/customScrollReveal-index.js"></script>
   <script src="/build/js/Typed.js"></script>
   <script src="/build/js/customTyped.js"></script>
+  <script src="/build/js/contact-form.js"></script>
   <script src="/build/js/app.js"></script>
 
 </body>

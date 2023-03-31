@@ -1,0 +1,49 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.social-links{
+
+  .links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .social-icon {
+    align-items: center;  
+    color: v.$gray;
+    display: flex;  
+    height: 70px;
+    justify-content: center;
+    margin: 2px; 
+    text-decoration: none; 
+    transition: all .2s ease;
+    width: 70px;
+    font-size: 3rem;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  
+  .social-icon:hover {  
+    color: #fff;
+  }
+  
+  .shadow:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  }
+  
+  #linkedin:hover  {
+    background-color: #0177B5;
+  }
+
+  #instagram:hover{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  }
+  
+  .icono-social:active {
+    transform: scale(.9);
+  }
+}

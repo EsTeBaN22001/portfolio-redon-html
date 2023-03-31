@@ -1,5 +1,6 @@
 // Fuentes
-$principalFont: 'Roboto', sans-serif;
+$principalFont: 'Open Sans', sans-serif;
+
 // Tamaño de Media Queries
 $breakpointSmartWatch: 320px;
 $breakpointPhone: 410px;
@@ -9,8 +10,10 @@ $breakpointDesktop: 930px;
 $desktop: 1024px;
 
 // Colores
-$principalColor: #3A6073;
-$secondaryColor: #A770EF;
+// $principalColor: #3A6073;
+$principalColor: #537FE7;
+$secondaryColor: #C0EEF2;
+$terciaryColor: #0000ff;
 $blue: #0da6f3;
 $red: #cb0000;
 $green:#329f00;
@@ -21,5 +24,11 @@ $darkGray: #b8b8b8;
 $white: #FFFFFF;
 
 // Gradient colors
-$pink: #eaafc8;
-$purple: #654ea3;
+// $pink: #eaafc8;
+// $purple: #654ea3;
+$gradientColor1: #537FE7;
+$gradientColor2: #C0EEF2;
+
+// Gradient
+$gradient: linear-gradient(to right, $gradientColor1, $gradientColor2);
+$gradientWebkit: -webkit-linear-gradient(to right, $gradientColor1, $gradientColor2);

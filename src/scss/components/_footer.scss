@@ -51,7 +51,7 @@
             //   background: linear-gradient(to right, #eaafc8, #654ea3);
             //   background-clip: text;
             //   -webkit-text-fill-color: transparent;
-              color: v.$purple; 
+              color: v.$gradientColor2; 
             }
 
             @include m.breakpointSmartWatch{
@@ -60,7 +60,7 @@
           }
 
           &:hover{
-            color: v.$pink;
+            color: v.$gradientColor1;
           }
         }
       }
@@ -90,7 +90,7 @@
             color: v.$principalColor;
 
             a{
-              color: v.$pink;
+              color: v.$gradientColor1;
             }
           }
         }
