@@ -10,7 +10,7 @@ if(document.querySelector('.header')){
 
 // Código para el pre-loader de la página
 
-window.addEventListener('load', function(){
-  const loader = document.querySelector('.loader');
-  loader.classList.toggle('loader2');
-})
+// window.addEventListener('load', function(){
+//   const loader = document.querySelector('.loader');
+//   loader.classList.toggle('loader2');
+// })

@@ -85,3 +85,8 @@ img {
 	background: v.$gradientWebkit;
 	background: v.$gradient;
 }
+
+.ocult{
+	opacity: 0;
+	overflow: hidden;
+}

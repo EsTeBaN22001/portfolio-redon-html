@@ -39,7 +39,6 @@ function img() {
 		.pipe(cache(squoosh()))
 		.pipe(webp())
 		.pipe(dest('build/img'))
-		.pipe(notify({ message: 'Imagen Completada' }));
 }
 
 function watchArchives() {
