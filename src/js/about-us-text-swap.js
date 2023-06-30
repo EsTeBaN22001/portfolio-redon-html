@@ -14,9 +14,9 @@ if(textButtonsContainer){
 
       completButton.classList.remove('active')
       completText.classList.remove('active')
+      summaryButton.classList.add('active')
 
       setTimeout(()=>{
-        summaryButton.classList.add('active')
         summaryText.classList.add('active')
       }, 300)
 
@@ -26,9 +26,9 @@ if(textButtonsContainer){
 
       summaryButton.classList.remove('active')
       summaryText.classList.remove('active')
+      completButton.classList.add('active')
 
       setTimeout(()=>{
-        completButton.classList.add('active')
         completText.classList.add('active')
       }, 300)
 
