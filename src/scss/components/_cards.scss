@@ -47,30 +47,6 @@
     margin: 2rem auto;
   }
 
-  .technologies {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    .skill-icon {
-      color: v.$principalColor;
-      width: 5rem;
-      height: 5rem;
-
-      &.fa-html5 {color: #D94A1E;}
-      &.fa-css3-alt {color: #0B6DAF;}
-      &.fa-sass {color: #C36291;}
-      &.fa-js-square {color: #D99A26;}
-      &.fa-gulp {color: #DC484C;}
-      &.fa-php {color: #404D85;}
-      &.fa-database {color: #DC931F;}
-      &.fa-code-branch {color: #E74B27;}
-      &.fa-clipboard-list {color: #000000;}
-      &.fa-wordpress{color: #21759B;}
-    }
-
-  }
-
   // Nuevo diseño de las cards
   .skills-list {
     margin: 4rem 0;
