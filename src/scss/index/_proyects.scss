@@ -63,8 +63,29 @@
           text-align: center;
         }
 
-        .visit-site-button{
-          @include m.button(v.$principalColor, v.$white);
+        .links{
+          display: flex;
+          column-gap: 2rem;
+          align-items: center;
+          
+          .visit-site-button{
+            display: flex;
+            align-items: center;
+
+            &.visit-site{
+              @include m.button(v.$principalColor, v.$white);
+              display: flex;
+              align-items: center;
+              column-gap: 1rem;
+            }
+
+            &.github{
+              @include m.button(v.$black, v.$white);
+              display: flex;
+              align-items: center;
+              column-gap: 1rem;
+            }
+          }
         }
       }
       
