@@ -1,5 +1,7 @@
 // Fuentes
-$principalFont: 'Open Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+$principalFont: "Mooli", sans-serif;
+// $principalFont: "Open Sans", sans-serif;
 
 // Tamaño de Media Queries
 $breakpointSmartWatch: 320px;
@@ -11,24 +13,29 @@ $desktop: 1024px;
 
 // Colores
 // $principalColor: #3A6073;
-$principalColor: #537FE7;
-$secondaryColor: #C0EEF2;
+$principalColor: #537fe7;
+$secondaryColor: #c0eef2;
 $terciaryColor: #0000ff;
 $blue: #0da6f3;
 $red: #cb0000;
-$green:#329f00;
+$green: #329f00;
 $black: #000000;
 $bgColor: #0f100e;
+$bgSection: #191919;
 $gray: #e1e1e1;
 $darkGray: #b8b8b8;
-$white: #FFFFFF;
+$white: #ffffff;
 
 // Gradient colors
 // $pink: #eaafc8;
 // $purple: #654ea3;
-$gradientColor1: #537FE7;
-$gradientColor2: #C0EEF2;
+$gradientColor1: #537fe7;
+$gradientColor2: #c0eef2;
 
 // Gradient
 $gradient: linear-gradient(to right, $gradientColor1, $gradientColor2);
-$gradientWebkit: -webkit-linear-gradient(to right, $gradientColor1, $gradientColor2);
+$gradientWebkit: -webkit-linear-gradient(
+  to right,
+  $gradientColor1,
+  $gradientColor2
+);
