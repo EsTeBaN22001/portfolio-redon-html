@@ -434,19 +434,19 @@
           >
             <div class="field-group">
               <label for="name">Nombre</label>
-              <input class="input" type="text" name="name" id="name" />
+              <input class="input" type="text" name="name" id="name"  required/>
             </div>
             <div class="field-group">
               <label for="surname">Apellido</label>
-              <input class="input" type="text" name="surname" id="surname" />
+              <input class="input" type="text" name="surname" id="surname"  required/>
             </div>
             <div class="field-group">
               <label for="email">Correo electrónico</label>
-              <input class="input" type="email" name="email" id="email" />
+              <input class="input" type="email" name="email" id="email"  required/>
             </div>
             <div class="field-group">
               <label for="message">Mensaje</label>
-              <textarea class="input" name="message" id="message"></textarea>
+              <textarea class="input" name="message" id="message" required></textarea>
             </div>
             <button type="submit">Enviar</button>
           </form>
@@ -473,3 +473,5 @@
     <script src="/build/js/app.js"></script>
   </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
