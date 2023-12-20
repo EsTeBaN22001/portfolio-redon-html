@@ -6,49 +6,60 @@
   flex-direction: row;
   align-items: center;
 
-  @include m.phone{flex-direction: column}
+  @include m.phone {
+    flex-direction: column;
+  }
 }
 
-.social-icons-container{
+.divider {
+  font-size: 2rem;
+  margin: 0 2rem 0 4rem;
+}
+
+.cv-button {
+  padding: 1rem 2rem;
+  color: v.$white;
+  font-size: 2rem;
+  border: 0.2rem solid white;
+}
+
+.social-icons-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   .social-icon {
-    align-items: center;  
-    color: v.$gray;
-    display: flex;  
-    height: 50px;
-    width: 50px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 2px; 
-    text-decoration: none; 
-    transition: all .2s ease;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    color: v.$gray;
     font-size: 3rem;
-  }
-  
-  .round {
-    border-radius: 50%;
-  }
-  
-  .social-icon:hover {  
-    color: #fff;
-  }
-  
-  .shadow:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-  }
-  
-  #linkedin:hover  {
-    background-color: #0177B5;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
   }
 
-  #github:hover{
+  .social-icon:hover {
+    color: #fff;
+  }
+
+  .shadow:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  #linkedin:hover {
+    background-color: #0177b5;
+  }
+
+  #github:hover {
     background: #4078c0;
     // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   }
-  
+
   .icono-social:active {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 }
