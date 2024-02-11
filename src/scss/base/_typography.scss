@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use 'variables' as v;
 
 h1,
 h2,
@@ -26,7 +26,7 @@ h3 {
   font-size: 2.4rem;
 }
 p {
-  color: v.$darkGray;
+  color: v.$white;
   font-size: 2.6rem;
   font-weight: 300;
 }

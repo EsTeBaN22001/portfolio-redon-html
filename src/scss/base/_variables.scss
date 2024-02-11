@@ -1,7 +1,8 @@
 // Fuentes
-@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
-$principalFont: "Mooli", sans-serif;
-// $principalFont: "Open Sans", sans-serif;
+// @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+// $principalFont: 'Mooli', sans-serif;
+$principalFont: 'Montserrat', sans-serif;
 
 // Tamaño de Media Queries
 $breakpointSmartWatch: 320px;
@@ -34,8 +35,4 @@ $gradientColor2: #c0eef2;
 
 // Gradient
 $gradient: linear-gradient(to right, $gradientColor1, $gradientColor2);
-$gradientWebkit: -webkit-linear-gradient(
-  to right,
-  $gradientColor1,
-  $gradientColor2
-);
+$gradientWebkit: -webkit-linear-gradient(to right, $gradientColor1, $gradientColor2);
