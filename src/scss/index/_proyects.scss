@@ -1,5 +1,5 @@
-@use "base/variables" as v;
-@use "base/mixins" as m;
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .proyects {
   h2 {
@@ -18,8 +18,9 @@
 
   .proyects-container {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
+    column-gap: 5rem;
     row-gap: 5rem;
 
     @include m.tablet {
@@ -28,6 +29,7 @@
 
     .proyect {
       background-color: rgba($color: #ffffff, $alpha: 0.08);
+      // border: 0.2rem solid rgb(53, 53, 53);
       border-radius: 1rem;
       display: grid;
       grid-template-columns: 1fr;
@@ -36,10 +38,34 @@
       -webkit-box-shadow: 0px 10px 16px -1px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 0px 10px 16px -1px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 10px 16px -1px rgba(0, 0, 0, 0.75);
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        .img-container {
+          img {
+            // transform: scale(1.1);
+            // filter: grayscale(1);
+            // filter: blur(0.5rem);
+          }
+        }
+        //   .float-title-container {
+        //     opacity: 1;
+        //   }
+        // }
+
+        // .text-container {
+        //   h3 {
+        //     opacity: 0;
+        //   }
+        // }
+      }
 
       .img-container {
         height: 25rem;
         overflow: hidden;
+        border-radius: 1rem;
+        position: relative;
 
         img {
           height: 100%;
@@ -47,7 +73,7 @@
           object-fit: cover;
           object-position: center center;
           border-radius: 1rem;
-          transition: transform 0.3s ease;
+          transition: all 0.3s ease;
         }
       }
 
@@ -58,6 +84,11 @@
         gap: 1rem;
         justify-content: space-between;
         align-items: center;
+
+        h3 {
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
 
         p {
           font-size: 2rem;
@@ -74,7 +105,7 @@
             align-items: center;
 
             &.visit-site {
-              @include m.button(v.$principalColor, v.$white);
+              @include m.button(darken(v.$principalColor, 10%), v.$white);
               display: flex;
               align-items: center;
               column-gap: 1rem;
@@ -86,14 +117,6 @@
               align-items: center;
               column-gap: 1rem;
             }
-          }
-        }
-      }
-
-      &:hover {
-        .img-container {
-          img {
-            transform: scale(1.1);
           }
         }
       }

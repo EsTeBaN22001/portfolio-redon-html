@@ -1,39 +1,115 @@
 @use 'base/variables' as v;
 
 .technologies {
-  &.small-tecnologies{
+  &.small-tecnologies {
     justify-content: center;
     column-gap: 2rem;
 
-    .skill-icon{
+    .skill-icon {
       width: 4rem;
       height: 4rem;
     }
   }
-  
+
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
 
-  .skill-icon{
+.skill-icon {
+  color: v.$white;
+  width: 4rem;
+  height: 4rem;
+  transition: all 0.3s ease-in-out;
+
+  &.deg1 {
     color: v.$principalColor;
-    width: 5rem;
-    height: 5rem;
-
-    &.fa-html5 {color: #D94A1E;}
-    &.fa-css3-alt {color: #0B6DAF;}
-    &.fa-sass {color: #C36291;}
-    &.fa-js-square {color: #D99A26;}
-    &.fa-gulp {color: #DC484C;}
-    &.fa-php {color: #404D85;}
-    &.fa-database {color: #DC931F;}
-    &.fa-code-branch {color: #E74B27;}
-    &.fa-clipboard-list {color: #000000;}
-    &.fa-wordpress{color: #21759B;}
-    &.fa-node-js{color: #7DBD01;}
-    &.fa-angular{color: #D6002F}
-    &.fa-github{color: v.$white}
   }
 
+  &.deg2 {
+    color: lighten(v.$principalColor, 10);
+  }
+
+  &.deg3 {
+    color: lighten(v.$principalColor, 20);
+  }
+
+  &.deg4 {
+    color: lighten(v.$principalColor, 30);
+  }
+
+  &.deg5 {
+    color: lighten(v.$principalColor, 40);
+  }
+
+  // &.fa-html5 {
+  //   color: #d94a1e;
+  // }
+  // &.fa-css3-alt {
+  //   color: #0b6daf;
+  // }
+  // &.fa-sass {
+  //   color: #c36291;
+  // }
+  // &.fa-js-square {
+  //   color: #ffac12;
+  // }
+  // &.fa-js {
+  //   color: #377cc7;
+  // }
+  // &.fa-gulp {
+  //   color: #dc484c;
+  // }
+  // &.fa-php {
+  //   color: #404d85;
+  // }
+  // &.fa-database {
+  //   color: #dc931f;
+  // }
+  // &.fa-code-branch {
+  //   color: #e74b27;
+  // }
+  // &.fa-clipboard-list {
+  //   color: #000000;
+  // }
+  // &.fa-wordpress {
+  //   color: #21759b;
+  // }
+  // &.fa-node-js {
+  //   color: #7dbd01;
+  // }
+  // &.fa-angular {
+  //   color: #d6002f;
+  // }
+  // &.fa-github {
+  //   color: v.$white;
+  // }
+  // &.fa-git-alt {
+  //   color: #f34f29;
+  // }
+  // &.fa-github {
+  //   // color: #0d1117;
+  //   color: v.$white;
+  //   // color: v.$principalColor;
+  // }
+  // &.fa-docker {
+  //   color: #1072d8;
+  // }
+  // &.fa-code-compare {
+  //   // color: #0d1117;
+  //   color: v.$white;
+  //   // color: v.$principalColor;
+  // }
+  // &.fa-server {
+  //   // color: #0d1117;
+  //   color: v.$white;
+  //   // color: v.$principalColor;
+  // }
+  // &.fa-java {
+  //   color: #f89820;
+  // }
+  // &.fa-laravel {
+  //   color: #ff2d20;
+  // }
 }

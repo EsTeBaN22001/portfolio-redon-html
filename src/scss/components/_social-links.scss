@@ -21,6 +21,13 @@
   color: v.$white;
   font-size: 2rem;
   border: 0.2rem solid white;
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: v.$white;
+    color: v.$black;
+  }
 }
 
 .social-icons-container {

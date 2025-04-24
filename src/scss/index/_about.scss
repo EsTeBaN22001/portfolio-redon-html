@@ -1,7 +1,7 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.about{
+.about {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -9,78 +9,43 @@
   margin-top: 0;
   padding-top: 20rem;
 
-  @include m.tablet{
+  @include m.tablet {
     text-align: center;
     padding-top: 25rem;
   }
 
-  h1{
+  h1 {
     text-align: start;
 
-    @include m.tablet{text-align: center;}
+    @include m.tablet {
+      text-align: center;
+    }
   }
 
-  .about-text-container{
+  .about-text-container {
     flex: 4;
 
-    p{
-      opacity: 0;
-      visibility: hidden;
-      height: 0;
-      transition: all .3s ease-in-out;
-      
-      &.active{
-        margin-top: 2rem;
-        opacity: 1;
-        visibility: visible;
-        height: auto;
-      }
+    p {
+      margin-top: 2rem;
+      transition: all 0.3s ease-in-out;
     }
 
-    .typed{
+    .typed {
       color: v.$blue;
-    }
-
-    .text-buttons-container{
-      display: flex;
-      align-items: center;
-      column-gap: 1rem;
-
-      @include m.tablet{justify-content: center;}
-
-      .about-button{
-        color: v.$white;
-        padding: 1rem;
-        border: none;
-        outline: none;
-        border-radius: 1.5rem;
-        font-size: 1.5rem;
-        background-color: v.$principalColor;
-        transition: background-color .3s ease-in-out;
-
-        &:hover{
-          cursor: pointer;
-        }
-
-        &.active{
-          background-color: darken(v.$principalColor, 10%);
-        }
-      }
     }
   }
 
-  .about-img-container{
+  .about-img-container {
     max-width: 30rem;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
-    @include m.tablet{
+    @include m.tablet {
       display: none;
     }
-    
-    img{
+
+    img {
       width: 100%;
       height: auto;
-
     }
   }
 }
