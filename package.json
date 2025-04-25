@@ -19,7 +19,8 @@
     "gulp-terser-js": "^5.2.2",
     "gulp-webp": "^4.0.1",
     "sass": "^1.51.0",
-    "terser": "^5.13.1"
+    "terser": "^5.13.1",
+    "live-server": "1.2.2"
   },
   "overrides": {
     "graceful-fs": "^4.2.9"

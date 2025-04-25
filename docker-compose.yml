@@ -1,0 +1,19 @@
+services:
+  web:
+    image: node:18-slim
+    container_name: portfolio
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - '80:80'
+      # se instala webp por un problema de dependencias de gulp
+    command: >
+      sh -c "
+        apt-get update &&
+        apt-get install -y webp &&
+        npm install &&
+        npm run gulp &
+        npx live-server --port=80 --watch=. --quiet --host=0.0.0.0
+      "

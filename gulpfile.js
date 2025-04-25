@@ -32,9 +32,9 @@ function img() {
 }
 
 function watchArchives() {
-  watch(paths.scss, css)
-  watch(paths.js, javascript)
-  watch(paths.img, img)
+  watch(paths.scss, { usePolling: true, interval: 1000 }, css)
+  watch(paths.js, { usePolling: true, interval: 1000 }, javascript)
+  watch(paths.img, { usePolling: true, interval: 1000 }, img)
 }
 
 exports.css = css
