@@ -39,4 +39,4 @@ function watchArchives() {
 
 exports.css = css
 exports.watch = watchArchives
-exports.default = parallel(css, javascript, img, watchArchives)
+exports.default = parallel(css, javascript, img)

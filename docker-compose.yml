@@ -1,6 +1,6 @@
 services:
   web:
-    image: node:18-slim
+    image: node:23-slim
     container_name: portfolio
     working_dir: /app
     volumes:
