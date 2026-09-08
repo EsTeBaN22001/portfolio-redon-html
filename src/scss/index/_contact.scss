@@ -1,74 +1,227 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+.contact-section {
+  position: relative;
+}
+
 .contact-us {
   width: 100%;
-  min-height: 10rem;
   margin-bottom: 5rem;
+  position: relative;
 
-  .form-container {
-    .form {
-      margin: 0 auto;
-      background-color: rgba($color: #ffffff, $alpha: 0.06);
-      backdrop-filter: blur(0.4rem);
-      border-radius: 1rem;
-      padding: 2rem;
-      -webkit-box-shadow: 0px 10px 16px -1px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 0px 10px 16px -1px rgba(0, 0, 0, 0.75);
-      box-shadow: 0px 10px 16px -1px rgba(0, 0, 0, 0.75);
-      width: 50%;
+  .form-wrapper {
+    position: relative;
+    max-width: 680px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-      @include m.tablet {
-        width: 70%;
-      }
-      @include m.phone {
-        width: 90%;
-      }
+  .contact-card {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background: rgba(18, 20, 26, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(83, 127, 231, 0.25);
+    border-radius: 1.6rem;
+    box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.9), 0 0 35px rgba(83, 127, 231, 0.12);
+    overflow: hidden;
+    transition: all 0.3s ease;
 
-      .field-group {
-        position: relative;
-        margin-top: 4rem;
+    &:hover {
+      border-color: rgba(83, 127, 231, 0.45);
+      box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.95), 0 0 45px rgba(83, 127, 231, 0.2);
+    }
+  }
 
-        .input {
-          display: block;
-          outline: none;
-          color: v.$white;
-          width: 100%;
-          padding: 1rem;
-          font-size: 1.7rem;
-          background-color: rgba($color: #ffffff, $alpha: 0.2);
-          backdrop-filter: blur(0.2rem);
-          border: 0.3rem solid transparent;
-          border-radius: 1rem;
-          transition: 0.2s ease-in-out all;
+  .contact-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 
-          &:focus {
-            border: 0.3rem solid v.$blue;
-          }
-        }
+    .window-controls {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
 
-        label {
-          font-size: 2rem;
-          padding: 1rem 0;
-          display: inline-block;
-          margin-bottom: 1rem;
-        }
+      .control-dot {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        display: inline-block;
 
-        textarea {
-          resize: none;
-          height: 20rem;
-        }
-      }
-
-      button {
-        @include m.button(v.$principalColor, v.$white) {
-          width: 100%;
-          @include m.tablet {
-            width: 100%;
-          }
-        }
-        margin-top: 4rem;
+        &.close { background-color: #ff5f56; }
+        &.minimize { background-color: #ffbd2e; }
+        &.expand { background-color: #27c93f; }
       }
     }
+
+    .code-tab {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: rgba(83, 127, 231, 0.12);
+      padding: 0.5rem 1.4rem;
+      border-radius: 0.8rem;
+      border: 1px solid rgba(83, 127, 231, 0.25);
+
+      .code-tab-icon {
+        color: v.$principalColor;
+        font-size: 1.3rem;
+      }
+
+      .code-tab-name {
+        color: v.$white;
+        font-size: 1.3rem;
+        font-family: monospace;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .code-card-actions {
+      .code-badge {
+        font-size: 1.2rem;
+        color: v.$secondaryColor;
+        background: rgba(83, 127, 231, 0.15);
+        border: 1px solid rgba(83, 127, 231, 0.3);
+        padding: 0.3rem 0.8rem;
+        border-radius: 0.6rem;
+        font-weight: 600;
+        font-family: monospace;
+      }
+    }
+  }
+
+  .form {
+    padding: 3rem;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+
+    @include m.phone {
+      padding: 2rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+
+      @include m.phone {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+
+    .field-group {
+      margin-top: 2rem;
+      position: relative;
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: v.$secondaryColor;
+        margin-bottom: 0.8rem;
+        padding: 0;
+
+        i {
+          font-size: 1.4rem;
+          color: v.$principalColor;
+        }
+      }
+
+      .input {
+        width: 100%;
+        padding: 1.3rem 1.6rem;
+        font-size: 1.5rem;
+        color: v.$white;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(83, 127, 231, 0.25);
+        border-radius: 1rem;
+        outline: none;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: all 0.3s ease;
+        font-family: inherit;
+
+        &::placeholder {
+          color: #6a7285;
+          font-weight: 300;
+        }
+
+        &:focus {
+          border-color: v.$principalColor;
+          background: rgba(83, 127, 231, 0.08);
+          box-shadow: 0 0 18px rgba(83, 127, 231, 0.35);
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 14rem;
+        line-height: 1.6;
+      }
+    }
+
+    .contact-submit-btn {
+      width: 100%;
+      margin-top: 3rem;
+      padding: 1.4rem 3rem;
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: v.$white;
+      background: v.$principalColor;
+      border: 1px solid transparent;
+      border-radius: 2.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(83, 127, 231, 0.4);
+      transition: all 0.3s ease;
+
+      i {
+        font-size: 1.5rem;
+        transition: transform 0.2s ease;
+      }
+
+      &:hover {
+        background: lighten(v.$principalColor, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(83, 127, 231, 0.6);
+
+        i {
+          transform: translateX(3px) translateY(-2px);
+        }
+      }
+    }
+  }
+
+  .contact-ambient-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(83, 127, 231, 0.2) 0%, rgba(192, 238, 242, 0.06) 50%, transparent 70%);
+    filter: blur(50px);
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 50%;
   }
 }

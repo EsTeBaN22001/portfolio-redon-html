@@ -45,14 +45,15 @@
         </a>
       </div>
       <div class="links-container">
-        <a class="cv-button" href="CV Esteban Redón.pdf" download="CV Redón Esteban">Descargar CV</a>
+        <a class="cv-button" href="CV Esteban Redón.pdf" download="CV Redón Esteban">
+          <i class="fa-solid fa-download"></i> Descargar CV
+        </a>
         <span class="divider"> | </span>
-        <!-- <p class="phone-number"><i class="fa-solid fa-phone"></i> +54 2664552752 |</p> -->
         <div class="social-icons-container">
           <a target="_blank" href="https://www.linkedin.com/in/esteban-redon-194928217/" class="social-icon shadow"
-            id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-          <a target="_blank" href="https://github.com/EsTeBaN22001" class="social-icon shadow" id="github"><i
-              class="fa-brands fa-github"></i></a>
+            id="linkedin" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a target="_blank" href="https://github.com/EsTeBaN22001" class="social-icon shadow" id="github"
+            title="GitHub"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
     </div>
@@ -60,35 +61,99 @@
 
   <section id="about-us" class="container-sm in-section about reveal2 section">
     <div class="about-text-container">
-      <h1 class="title">
+      <div class="hero-badge-container">
+        <span class="hero-badge">
+          <span class="badge-status-dot"></span>
+          Disponible para nuevos proyectos
+        </span>
+      </div>
+      <h1 class="hero-title title">
         &lt;Desarrollador <br />
         <span class="typed"></span>/&gt;
       </h1>
-      <p class="summary-text active" id="summary-text">
-        Soy desarrollador web fullstack y encontré en el desarrollo una forma de transformar ideas en soluciones reales.
-        Me apasiona crear experiencias digitales que sean funcionales, escalables y con propósito.
-
-        Disfruto cada etapa del proceso, desde el diseño de la experiencia hasta la lógica detrás de escena, con
-        atención al detalle y foco en los resultados. Creo en el aprendizaje continuo, en trabajar en equipo y en el
-        impacto que puede tener una solución bien pensada.
-      </p>
+      <div class="hero-description">
+        <p class="summary-text active" id="summary-text">
+          Soy desarrollador web fullstack y encontré en el desarrollo una forma de transformar ideas en soluciones
+          reales.
+          Me apasiona crear experiencias digitales que sean funcionales, escalables y con propósito.
+        </p>
+        <p class="summary-subtext">
+          Disfruto cada etapa del proceso, desde el diseño de la experiencia hasta la lógica detrás de escena, con
+          atención al detalle y foco en los resultados. Creo en el aprendizaje continuo, el trabajo en equipo y en el
+          impacto de una solución bien pensada.
+        </p>
+      </div>
+      <div class="hero-cta-container">
+        <a href="#proyects" class="hero-cta-btn primary">
+          <i class="fa-solid fa-code"></i> Ver Proyectos
+        </a>
+        <a href="#contact" class="hero-cta-btn secondary">
+          <i class="fa-solid fa-paper-plane"></i> Contáctame
+        </a>
+      </div>
+      <div class="hero-quick-stack">
+        <span class="quick-stack-label">Stack principal:</span>
+        <div class="quick-stack-tags">
+          <span class="quick-tag"><i class="fa-brands fa-node-js"></i> Node.js / Express</span>
+          <span class="quick-tag"><i class="fa-brands fa-angular"></i> Angular</span>
+          <span class="quick-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+        </div>
+      </div>
     </div>
-    <div class="about-img-container reveal1">
-      <img src="build/img/about.svg" alt="Imágen acerca de mí" />
+    <div class="about-visual-container reveal1">
+      <div class="hero-code-card">
+        <div class="code-card-header">
+          <div class="window-controls">
+            <span class="control-dot close"></span>
+            <span class="control-dot minimize"></span>
+            <span class="control-dot expand"></span>
+          </div>
+          <div class="code-tab">
+            <i class="fa-solid fa-code code-tab-icon"></i>
+            <span class="code-tab-name">esteban.ts</span>
+          </div>
+          <div class="code-card-actions">
+            <span class="code-badge">TS</span>
+          </div>
+        </div>
+        <div class="code-card-body">
+          <pre class="code-content"><code><span class="line-num">01</span><span class="code-keyword">const</span> <span class="code-variable">developer</span>: <span class="code-type">FullStackDev</span> = {
+<span class="line-num">02</span>  <span class="code-prop">nombre</span>: <span class="code-string">'Esteban Redón'</span>,
+<span class="line-num">03</span>  <span class="code-prop">rol</span>: <span class="code-string">'Full Stack Developer'</span>,
+<span class="line-num">04</span>  <span class="code-prop">stackPrincipal</span>: [
+<span class="line-num">05</span>    <span class="code-string">'Node.js'</span>, <span class="code-string">'Express'</span>,
+<span class="line-num">06</span>    <span class="code-string">'Angular'</span>, <span class="code-string">'MySQL'</span>
+<span class="line-num">07</span>  ],
+<span class="line-num">08</span>  <span class="code-prop">enfoque</span>: <span class="code-string">'Soluciones escalables & propósito'</span>,
+<span class="line-num">09</span>  <span class="code-prop">estado</span>: <span class="code-string">'Listo para crear código con impacto'</span>
+<span class="line-num">10</span>};</code></pre>
+        </div>
+        <div class="code-card-footer">
+          <span class="footer-item"><i class="fa-solid fa-circle-check"></i> Clean Code</span>
+          <span class="footer-item"><i class="fa-solid fa-bolt"></i> Escalabilidad</span>
+        </div>
+      </div>
+      <div class="hero-ambient-glow"></div>
     </div>
   </section>
 
-  <section id="skills-container">
+  <section id="skills-container" class="skills-section">
     <div class="container-sm section-content">
-      <h2 class="title">&lt;Skills/&gt;</h2>
+      <div class="section-title-container">
+        <h2 class="title">&lt;Skills/&gt;</h2>
+        <p class="section-subtitle">Tecnologías y herramientas con las que construyo soluciones</p>
+      </div>
       <section class="skills">
         <div class="category frontend">
-          <h3>FrontEnd</h3>
+          <div class="category-header">
+            <span class="category-dot"></span>
+            <h3><i class="fa-solid fa-layer-group"></i> FrontEnd</h3>
+          </div>
           <div class="tags">
             <span class="tag html"><i class="fa-brands fa-html5 skill-icon"></i> <span class="text">HTML</span></span>
             <span class="tag css"><i class="fa-brands fa-css3-alt skill-icon"></i> <span class="text">CSS</span></span>
             <span class="tag sass"><i class="fa-brands fa-sass skill-icon"></i> <span class="text">SASS</span></span>
-            <span class="tag css"><i class="fa-brands fa-css3-alt skill-icon"></i> <span class="text">Tailwind
+            <span class="tag tailwind"><i class="fa-solid fa-wind skill-icon"></i> <span class="text">Tailwind
                 CSS</span></span>
             <span class="tag js"><i class="fa-brands fa-js-square skill-icon"></i> <span
                 class="text ts">JavaScript</span></span>
@@ -98,39 +163,47 @@
           </div>
         </div>
         <div class="category backend">
-          <h3>BackEnd</h3>
+          <div class="category-header">
+            <span class="category-dot"></span>
+            <h3><i class="fa-solid fa-server"></i> BackEnd</h3>
+          </div>
           <div class="tags">
-            <span class="tag php"><i class="fa-brands fa-php skill-icon"></i> <span class="text">PHP</span></span>
             <span class="tag nodejs"><i class="fa-brands fa-node-js skill-icon"></i> <span
                 class="text">Node.js</span></span>
-            <span class="tag nodejs"><i class="fa-brands fa-node-js skill-icon"></i> <span
+            <span class="tag express"><i class="fa-solid fa-bolt-lightning skill-icon"></i> <span
                 class="text">Express</span></span>
+            <span class="tag mysql"><i class="fa-solid fa-database skill-icon"></i> <span
+                class="text">MySQL</span></span>
+            <span class="tag php"><i class="fa-brands fa-php skill-icon"></i> <span class="text">PHP</span></span>
             <span class="tag ts"><i class="fa-brands fa-js skill-icon"></i> <span class="text">TypeScript</span></span>
           </div>
         </div>
         <div class="category devops">
-          <h3>DevOps</h3>
+          <div class="category-header">
+            <span class="category-dot"></span>
+            <h3><i class="fa-solid fa-cloud"></i> DevOps & Control</h3>
+          </div>
           <div class="tags">
             <span class="tag git"><i class="fa-brands fa-git-alt skill-icon"></i> <span class="text">Git</span></span>
             <span class="tag github"><i class="fa-brands fa-github skill-icon"></i> <span
-                class="text">Github</span></span>
+                class="text">GitHub</span></span>
             <span class="tag docker"><i class="fa-brands fa-docker skill-icon"></i> <span
                 class="text">Docker</span></span>
           </div>
         </div>
         <div class="category learning">
-          <h3>Aprendiendo</h3>
+          <div class="category-header">
+            <span class="category-dot"></span>
+            <h3><i class="fa-solid fa-rocket"></i> Aprendiendo</h3>
+          </div>
           <div class="tags">
+            <span class="tag dotnet"><i class="fa-brands fa-microsoft skill-icon"></i> <span
+                class="text">asp.NET</span></span>
             <span class="tag java"><i class="fa-brands fa-java skill-icon"></i> <span class="text">Java</span></span>
-            <span class="tag laravel"><i class="fa-brands fa-laravel skill-icon"></i> <span
-                class="text">Laravel</span></span>
             <span class="tag docker"><i class="fa-brands fa-docker skill-icon"></i> <span
                 class="text">Docker</span></span>
-            <span class="tag actions"><i class="fa-solid fa-code-compare skill-icon"></i> <span class="text">GitHub
-                Actions
-                CI/CD</span></span>
-            <span class="tag micros"><i class="fa-solid fa-server skill-icon"></i> <span class="text">Microservices
-                architecture</span></span>
+            <span class="tag micros"><i class="fa-solid fa-network-wired skill-icon"></i> <span
+                class="text">Microservices</span></span>
           </div>
         </div>
       </section>
@@ -138,176 +211,302 @@
   </section>
 
   <section id="proyects" class="container-sm proyects reveal1 section">
-    <h2 class="title">&lt;Proyectos realizados/&gt;</h2>
+    <div class="section-title-container">
+      <h2 class="title">&lt;Proyectos realizados/&gt;</h2>
+      <p class="section-subtitle">Selección de aplicaciones y plataformas web desarrolladas</p>
+    </div>
     <div class="proyects-container">
       <div class="proyect" id="fotaza">
         <div class="img-container">
           <img src="build/img/fotaza-index.webp" alt="fotaza-index" />
+          <span class="project-type-badge">Social Media</span>
         </div>
         <div class="text-container">
           <h3>Fotaza</h3>
-          <p>Red social estilo instagram y pinterest para compartir publicaciones, comentarios, chats y reacciones</p>
+          <p>Red social estilo Instagram y Pinterest para compartir publicaciones, comentarios, chats y reacciones en
+            tiempo real.</p>
           <ul class="technologies small-tecnologies">
-            <li><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
-            <li><i class="fa-brands fa-bootstrap skill-icon deg2"></i></li>
-            <li><i class="fa-brands fa-node-js skill-icon deg4"></i></li>
-            <li><i class="fa-solid fa-database skill-icon deg5"></i></li>
+            <li title="HTML5"><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
+            <li title="Bootstrap"><i class="fa-brands fa-bootstrap skill-icon deg2"></i></li>
+            <li title="Node.js"><i class="fa-brands fa-node-js skill-icon deg4"></i></li>
+            <li title="Base de datos"><i class="fa-solid fa-database skill-icon deg5"></i></li>
           </ul>
+          <button type="button" class="project-details-btn" data-project="fotaza">
+            <i class="fa-solid fa-images"></i> Ver Galería y Detalles
+          </button>
           <div class="links">
             <a class="visit-site-button visit-site" target="_blank" href="https://fotaza-rw2y.onrender.com/home"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i>Ver sitio</a>
             <a class="visit-site-button github" target="_blank" href="https://github.com/EsTeBaN22001/fotaza"><i
-                class="fa-brands fa-github"></i>Github</a>
+                class="fa-brands fa-github"></i>GitHub</a>
           </div>
         </div>
       </div>
       <div class="proyect" id="trelloclon">
         <div class="img-container">
           <img src="build/img/trelloclon-index.webp" alt="trelloclon-index" />
+          <span class="project-type-badge">Task Management</span>
         </div>
         <div class="text-container">
           <h3>TrelloClon</h3>
-          <p>Sitio web de un clon básico de Trello en el que se pueden gestionar las tareas de un proyecto</p>
+          <p>Clon interactivo de Trello para gestionar y organizar tableros, columnas y tareas de proyectos ágiles.</p>
           <ul class="technologies small-tecnologies">
-            <li><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
-            <li><i class="fa-brands fa-sass skill-icon deg2"></i></li>
-            <li><i class="fa-brands fa-angular skill-icon deg3"></i></li>
-            <li><i class="fa-brands fa-node-js skill-icon deg4"></i></li>
-            <li><i class="fa-solid fa-database skill-icon deg5"></i></li>
+            <li title="HTML5"><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
+            <li title="SASS"><i class="fa-brands fa-sass skill-icon deg2"></i></li>
+            <li title="Angular"><i class="fa-brands fa-angular skill-icon deg3"></i></li>
+            <li title="Node.js"><i class="fa-brands fa-node-js skill-icon deg4"></i></li>
+            <li title="Base de datos"><i class="fa-solid fa-database skill-icon deg5"></i></li>
           </ul>
+          <button type="button" class="project-details-btn" data-project="trelloclon">
+            <i class="fa-solid fa-images"></i> Ver Galería y Detalles
+          </button>
           <div class="links">
             <a class="visit-site-button visit-site" target="_blank" href="https://trelloclon-app.netlify.app/"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i>Ver sitio</a>
             <a class="visit-site-button github" target="_blank"
-              href="https://github.com/EsTeBaN22001/trello-clon-frontend"><i class="fa-brands fa-github"></i>Github</a>
+              href="https://github.com/EsTeBaN22001/trello-clon-frontend"><i class="fa-brands fa-github"></i>GitHub</a>
           </div>
         </div>
       </div>
       <div class="proyect" id="equizzy">
         <div class="img-container">
           <img src="build/img/equizzy-index.webp" alt="equizzy-index" />
+          <span class="project-type-badge">Quiz Platform</span>
         </div>
         <div class="text-container">
           <h3>EquizzyApp</h3>
-          <p>Sitio web de encuestas donde puedes crear tus propias encuestas y contestar encuestas creadas por otros
-          </p>
+          <p>Plataforma web de encuestas donde los usuarios pueden crear sus propios cuestionarios y responder los de
+            otros.</p>
           <ul class="technologies small-tecnologies">
-            <li><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
-            <li><i class="fa-brands fa-sass skill-icon deg2"></i></li>
-            <li><i class="fa-brands fa-js-square skill-icon deg3"></i></li>
-            <li><i class="fa-brands fa-php skill-icon deg4"></i></li>
-            <li><i class="fa-solid fa-database skill-icon deg5"></i></li>
+            <li title="HTML5"><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
+            <li title="SASS"><i class="fa-brands fa-sass skill-icon deg2"></i></li>
+            <li title="JavaScript"><i class="fa-brands fa-js-square skill-icon deg3"></i></li>
+            <li title="PHP"><i class="fa-brands fa-php skill-icon deg4"></i></li>
+            <li title="Base de datos"><i class="fa-solid fa-database skill-icon deg5"></i></li>
           </ul>
+          <button type="button" class="project-details-btn" data-project="equizzy">
+            <i class="fa-solid fa-images"></i> Ver Galería y Detalles
+          </button>
           <div class="links">
             <a class="visit-site-button visit-site" target="_blank" href="http://equizzy.infinityfreeapp.com"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i>Ver sitio</a>
             <a class="visit-site-button github" target="_blank" href="https://github.com/EsTeBaN22001/equizzyApp"><i
-                class="fa-brands fa-github"></i>Github</a>
+                class="fa-brands fa-github"></i>GitHub</a>
           </div>
         </div>
       </div>
       <div class="proyect" id="uptask">
         <div class="img-container">
           <img src="build/img/uptask-tasks.webp" alt="uptask-task" />
+          <span class="project-type-badge">Productivity</span>
         </div>
         <div class="text-container">
           <h3>UpTask</h3>
-          <p>Sitio web administrador de tareas. Permite crear tareas y marcarlas como completas o incompletas</p>
+          <p>Administrador de tareas con autenticación y filtros para organizar proyectos y seguir el progreso en
+            equipo.</p>
           <ul class="technologies small-tecnologies">
-            <li><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
-            <li><i class="fa-brands fa-sass skill-icon deg2"></i></li>
-            <li><i class="fa-brands fa-js-square skill-icon deg3"></i></li>
-            <li><i class="fa-brands fa-php skill-icon deg4"></i></li>
-            <li><i class="fa-solid fa-database skill-icon deg5"></i></li>
+            <li title="HTML5"><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
+            <li title="SASS"><i class="fa-brands fa-sass skill-icon deg2"></i></li>
+            <li title="JavaScript"><i class="fa-brands fa-js-square skill-icon deg3"></i></li>
+            <li title="PHP"><i class="fa-brands fa-php skill-icon deg4"></i></li>
+            <li title="Base de datos"><i class="fa-solid fa-database skill-icon deg5"></i></li>
           </ul>
+          <button type="button" class="project-details-btn" data-project="uptask">
+            <i class="fa-solid fa-images"></i> Ver Galería y Detalles
+          </button>
           <div class="links">
             <a class="visit-site-button visit-site" target="_blank" href="http://uptask.infinityfreeapp.com"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i>Ver sitio</a>
             <a class="visit-site-button github" target="_blank" href="https://github.com/EsTeBaN22001/uptask"><i
-                class="fa-brands fa-github"></i>Github</a>
+                class="fa-brands fa-github"></i>GitHub</a>
           </div>
         </div>
       </div>
       <div class="proyect" id="appsalon">
         <div class="img-container">
           <img src="build/img/appsalon-index.webp" alt="appsalon-index" />
-          <div class="float-title-container">
-            <span class="float-title">AppSalon</span>
-          </div>
+          <span class="project-type-badge">Booking System</span>
         </div>
         <div class="text-container">
           <h3>AppSalon</h3>
-          <p>Sitio web para reservar turnos en salón de estética y seleccionar los diferentes servicios requeridos</p>
+          <p>Sistema web para reservar turnos en salón de estética, selección dinámica de servicios y gestión de citas.
+          </p>
           <ul class="technologies small-tecnologies">
-            <li><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
-            <li><i class="fa-brands fa-sass skill-icon deg2"></i></li>
-            <li><i class="fa-brands fa-js-square skill-icon deg3"></i></li>
-            <li><i class="fa-brands fa-php skill-icon deg4"></i></li>
-            <li><i class="fa-solid fa-database skill-icon deg5"></i></li>
+            <li title="HTML5"><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
+            <li title="SASS"><i class="fa-brands fa-sass skill-icon deg2"></i></li>
+            <li title="JavaScript"><i class="fa-brands fa-js-square skill-icon deg3"></i></li>
+            <li title="PHP"><i class="fa-brands fa-php skill-icon deg4"></i></li>
+            <li title="Base de datos"><i class="fa-solid fa-database skill-icon deg5"></i></li>
           </ul>
+          <button type="button" class="project-details-btn" data-project="appsalon">
+            <i class="fa-solid fa-images"></i> Ver Galería y Detalles
+          </button>
           <div class="links">
             <a class="visit-site-button visit-site" target="_blank" href="http://appsalon.infinityfreeapp.com"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i>Ver sitio</a>
             <a class="visit-site-button github" target="_blank" href="https://github.com/EsTeBaN22001/appSalon"><i
-                class="fa-brands fa-github"></i>Github</a>
+                class="fa-brands fa-github"></i>GitHub</a>
           </div>
         </div>
       </div>
       <div class="proyect" id="nissi">
         <div class="img-container">
           <img src="build/img/nissi-index.webp" alt="nissi-confecciones-index" />
+          <span class="project-type-badge">Client Website</span>
         </div>
         <div class="text-container">
-          <h3>Nissi-confecciones</h3>
-          <p>Sitio web de un cliente mostrando su empresa incluyendo catálogo de productos y galería de fotos</p>
+          <h3>Nissi Confecciones</h3>
+          <p>Sitio corporativo para cliente textil incluyendo catálogo digital de productos, galería de fotos y
+            contacto.</p>
           <ul class="technologies small-tecnologies">
-            <li><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
-            <li><i class="fa-brands fa-sass skill-icon deg2"></i></li>
-            <li><i class="fa-brands fa-js-square skill-icon deg3"></i></li>
-            <li><i class="fa-brands fa-php skill-icon deg4"></i></li>
-            <li><i class="fa-solid fa-database skill-icon deg5"></i></li>
+            <li title="HTML5"><i class="fa-brands fa-html5 skill-icon deg1"></i></li>
+            <li title="SASS"><i class="fa-brands fa-sass skill-icon deg2"></i></li>
+            <li title="JavaScript"><i class="fa-brands fa-js-square skill-icon deg3"></i></li>
+            <li title="PHP"><i class="fa-brands fa-php skill-icon deg4"></i></li>
+            <li title="Base de datos"><i class="fa-solid fa-database skill-icon deg5"></i></li>
           </ul>
+          <button type="button" class="project-details-btn" data-project="nissi">
+            <i class="fa-solid fa-images"></i> Ver Galería y Detalles
+          </button>
           <div class="links">
             <a class="visit-site-button github" target="_blank"
-              href="https://github.com/EsTeBaN22001/nissi-confecciones"><i class="fa-brands fa-github"></i>Github</a>
+              href="https://github.com/EsTeBaN22001/nissi-confecciones"><i class="fa-brands fa-github"></i>GitHub</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="in-section">
+  <section class="in-section contact-section">
     <div id="contact" class="container contact-us reveal1">
-      <h2 class="title">&lt;Contáctame/&gt;</h2>
-      <div class="form-container">
-        <form class="form reveal-top" action="https://formspree.io/f/xgedyjzz" method="POST" id="form">
-          <div class="field-group">
-            <label for="name">Nombre</label>
-            <input class="input" type="text" name="name" id="name" required />
+      <div class="section-title-container">
+        <h2 class="title">&lt;Contáctame/&gt;</h2>
+        <p class="section-subtitle">¿Tienes una idea o proyecto en mente? Hablemos y hagámoslo realidad</p>
+      </div>
+      <div class="form-wrapper">
+        <div class="contact-card">
+          <div class="contact-card-header">
+            <div class="window-controls">
+              <span class="control-dot close"></span>
+              <span class="control-dot minimize"></span>
+              <span class="control-dot expand"></span>
+            </div>
+            <div class="code-tab">
+              <i class="fa-solid fa-paper-plane code-tab-icon"></i>
+              <span class="code-tab-name">contacto.env</span>
+            </div>
+            <div class="code-card-actions">
+              <span class="code-badge">CONNECT</span>
+            </div>
           </div>
-          <div class="field-group">
-            <label for="surname">Apellido</label>
-            <input class="input" type="text" name="surname" id="surname" required />
-          </div>
-          <div class="field-group">
-            <label for="email">Correo electrónico</label>
-            <input class="input" type="email" name="email" id="email" required />
-          </div>
-          <div class="field-group">
-            <label for="message">Mensaje</label>
-            <textarea class="input" name="message" id="message" required></textarea>
-          </div>
-          <button type="submit">Enviar</button>
-        </form>
+          <form class="form reveal-top" action="https://formspree.io/f/xgedyjzz" method="POST" id="form">
+            <div class="form-grid">
+              <div class="field-group">
+                <label for="name"><i class="fa-regular fa-user"></i> Nombre</label>
+                <input class="input" type="text" name="name" id="name" placeholder="Tu nombre" required />
+              </div>
+              <div class="field-group">
+                <label for="surname"><i class="fa-regular fa-id-badge"></i> Apellido</label>
+                <input class="input" type="text" name="surname" id="surname" placeholder="Tu apellido" required />
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="email"><i class="fa-regular fa-envelope"></i> Correo electrónico</label>
+              <input class="input" type="email" name="email" id="email" placeholder="tu-correo@ejemplo.com" required />
+            </div>
+            <div class="field-group">
+              <label for="message"><i class="fa-regular fa-comment-dots"></i> Mensaje</label>
+              <textarea class="input" name="message" id="message" placeholder="Cuéntame sobre tu proyecto o consulta..."
+                required></textarea>
+            </div>
+            <button type="submit" class="contact-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </form>
+        </div>
+        <div class="contact-ambient-glow"></div>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="copyright">
-      <p>Esteban Redón 2026</p>
+    <div class="footer-container container-sm">
+      <div class="footer-logo">
+        <a href="/index.html">&lt;/&gt;Esteban Redón</a>
+      </div>
+      <div class="footer-social">
+        <a target="_blank" href="https://www.linkedin.com/in/esteban-redon-194928217/" class="footer-social-link"
+          title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a target="_blank" href="https://github.com/EsTeBaN22001" class="footer-social-link" title="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="copyright">
+        <p>Diseñado y desarrollado por <span>Esteban Redón</span> &bull; 2026</p>
+      </div>
     </div>
   </footer>
+
+  <!-- Modal Flotante de Proyectos -->
+  <div class="project-modal" id="project-modal">
+    <div class="project-modal-backdrop"></div>
+    <div class="project-modal-content">
+      <div class="modal-header">
+        <div class="window-controls">
+          <span class="control-dot close" id="close-modal-dot"></span>
+          <span class="control-dot minimize"></span>
+          <span class="control-dot expand"></span>
+        </div>
+        <div class="code-tab">
+          <i class="fa-solid fa-file-code code-tab-icon"></i>
+          <span class="code-tab-name" id="modal-project-name">proyecto.view</span>
+        </div>
+        <button class="close-modal-btn" id="close-modal-btn">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <!-- Sección Izquierda: Carrusel -->
+        <div class="modal-carousel-section">
+          <div class="carousel-viewer">
+            <img src="" alt="Project Image" id="carousel-main-img" class="carousel-main-img">
+            <button class="carousel-btn prev-btn" id="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn next-btn" id="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-counter" id="carousel-counter">1 / 1</div>
+          </div>
+          <div class="carousel-indicators" id="carousel-indicators">
+            <!-- Indicators will be injected here -->
+          </div>
+          <p class="carousel-caption" id="carousel-caption"></p>
+        </div>
+
+        <!-- Sección Derecha: Detalles -->
+        <div class="modal-details-section">
+          <div class="modal-details-header">
+            <h3 id="modal-title">Título Proyecto</h3>
+            <span class="project-type-badge" id="modal-badge">Badge</span>
+          </div>
+          <div class="modal-description" id="modal-description">
+            <p>Descripción del proyecto...</p>
+          </div>
+          <div class="modal-tech-stack">
+            <h4>Tecnologías</h4>
+            <div class="tech-chips" id="modal-tech-chips">
+              <!-- Chips will be injected here -->
+            </div>
+          </div>
+          <div class="modal-features">
+            <h4>Características Principales</h4>
+            <ul class="features-list" id="modal-features-list">
+              <!-- Features will be injected here -->
+            </ul>
+          </div>
+          <div class="modal-links" id="modal-links">
+            <!-- Links will be injected here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
     integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -317,8 +516,8 @@
   <script src="/build/js/contact-form.js"></script>
   <script src="/build/js/about-us-text-swap.js"></script>
   <script src="/build/js/app.js"></script>
+  <script src="/build/js/projects-modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
